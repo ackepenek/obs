@@ -1,0 +1,17 @@
+{% include "include/header.html" %}
+<div class = "container_16">
+    <div id = "header" class = "grid_16">
+        <div id="banner" class = "grid_3 push_1 alpha">
+                POWER SCHEME
+        </div>
+        <div id="login_form" class = "grid_7 push_6 omega">
+            <form method="POST" action="{% url obsapp.views.login %}" >
+                    {{form.username}}
+                    {{form.password}}
+                    <input type="submit" value = "Login" >
+            </form>
+        </div>
+
+    </div>
+</div>
+
